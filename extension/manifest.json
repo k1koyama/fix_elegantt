@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "Fix Elegantt",
+    "short_name": "fix_elegantt",
+    "description": "Fix gantt chart appearance for Elegantt",
+    "version": "0.1.0",
+    "icons": {
+        "16": "fix16.png",
+        "32": "fix32.png",
+        "48": "fix48.png",
+        "128": "fix128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [ "https://trello.com/b/*" ],
+            "js": [ "fix_elegantt.js" ]
+        }
+    ]
+}
